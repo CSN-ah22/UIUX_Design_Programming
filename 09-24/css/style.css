@@ -1,0 +1,46 @@
+*{box-sizing:border-box}
+body, h1, dl, dd, ul{margin:0;padding: 0;}
+li{list-style: none;}
+#header{background-color: #1c204f;height: 90px;}
+header{background: #fff; font-size: 30px; width: 1260px; margin: 0 auto;}
+header h1, header nav{display: inline-block;float: left;float: left;}
+header h1{font-size:1em;}
+header h1 a{color: #fff;display: inline-block; padding: 25px; text-decoration: none;}
+header nav{text-align: center;float: right;}
+header nav a{color: #fff; padding: 25px 50px;text-decoration: none;display: inline-block;font-size: 18px;font-weight: 500;font-family: 'Roboto',sans-serif; line-height: 40px;}
+header nav a:hover{border-bottom: 3px solid #e2d36b;padding-bottom: 22px;color: #bac94a;}
+.content{overflow: hidden;background-color: #e7e1d7;}
+.tit{font-size: 30px; font-weight: 700;font-family: 'Roboto',sans-serif;}
+.sub-visual{height: 200px;background: #db7b65; position: relative;}
+.sub-visual dl{position: absolute; right: 20%; top: 50%; color: #fff; transform: translateY(-50%);color: #fff;text-align: center;}/*transfrom 빼면 어중간한 높이를 가지게 됨*/
+.sub-visual .tit{font-size: 40px; }
+.sec-cont-wrap h3{text-align: center;}
+.cont{width: 1260px; margin: 0 auto;}
+.sub-img{width: 400px;height: 450px;background: #c9c9c9; float: left;margin-right: 80px;margin-bottom: 80px;}
+.cont dl{float: left;width: calc(100% - 480px);}
+
+.related-cont{clear: both;}
+.related-cont li{width: 33.333%;float: left;;}
+
+
+footer{padding: 20px;background: #999;text-align: center;}
+
+/*media query*/
+@media screen and (max-width:1280px){ 
+    h1{font-size: 1em;}
+}
+
+@media screen and (min-width:769px) and (max-width:1024px){ 
+    nav a{padding: 15px 30px}
+    section{width: 60%;}
+    aside{width: 40%;}
+}
+@media screen and (max-width:768px){ 
+h1{font-size: 0.75em;}
+nav a{width: 100%;border-bottom: 1px solid rgba(255, 255, 255, 0.2);}
+section,aside{float:none;width: 100%;padding:0}
+}
+
+@media screen and (max-width:320px){ 
+    
+}
