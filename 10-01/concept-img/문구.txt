@@ -1,0 +1,13 @@
+Menu2 >> My personal color
+Menu3 >> Fav color collection
+Menu4 >> Self made logo
+Menu5 >> Photo of memories
+Title >> Pink 
+Title description >> The rest
+Title >> My design sense
+Title1 >> I Like Color!
+Title2 >> I Like Create a Logo!
+Title3 >>photographing
+Title >> I Like Product design
+Title >> I Like Radio
+Title >> I Like Coding
