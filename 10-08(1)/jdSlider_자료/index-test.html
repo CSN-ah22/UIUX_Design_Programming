@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Slide</title>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css"
+          integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css"
+          integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+<link rel="stylesheet" href="css/slider-style.css">
+
+</head>
+
+<body>
+<section class="jd-slider slider">
+  <div class="slide-inner">
+    <ul class="slide-area">
+      <li> <a href="#">1</a> </li>
+      <li> <a href="#">2</a> </li>
+      <li> <a href="#">3</a> </li>
+      <li> <a href="#">4</a> </li>
+      <li> <a href="#">5</a> </li>
+    </ul>
+    <a class="prev" href="#"> <i class="fas fa-angle-left fa-2x"></i> </a> <a class="next" href="#"> <i class="fas fa-angle-right fa-2x"></i> </a> </div>
+  <div class="controller"> <a class="auto" href="#"> <i class="fas fa-play fa-xs"></i> <i class="fas fa-pause fa-xs"></i> </a>
+    <div class="indicate-area"></div>
+  </div>
+</section>
+<script src="./js/jquery.js"></script> 
+<script src="./js/jquery.jdSlider-latest.min.js"></script> 
+<script>
+        window.onload = function () {
+            $('.slider').jdSlider({
+                wrap: '.slide-inner',
+                slideShow: 2,
+                slideToScroll: 1,
+                isLoop: true,
+                responsive: [{
+                    viewSize: 768,
+                    settings: {
+                        slideShow: 1
+                    }
+                }]
+            });
+        };
+    </script>
+</body>
+</html>

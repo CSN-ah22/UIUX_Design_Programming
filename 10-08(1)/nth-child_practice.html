@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SubPage Layout</title>
+<style>
+    /* .thumb-img:nth-child(2){font-size: 50px;} 목록항목 안에--안에X 요소요소O*/
+    li:nth-of-type(3) .thumb-img{font-size: 50px;color: red;list-style: none;}
+     /* 목록항목 안에--안에O 요소요소X */
+    /* li 항목 여러개 중에 3번째 li를 찾아서 .thumb-img 클래스를 찾아 적용한다  */
+    
+    /* 아래 코드들은 먹히질 않는다 */
+    /* 1. 이유: tit클래스 안에는 어떠한 태그도 없기에 인식되지 않는다 */
+    /* .tit:nth-of-type(3) .thumb-img{font-size: 50px;color: red;list-style: none;} */
+    /* 2. 이유: nth-of-type은 항목의 안에--안에 있는것들중 클래스를 구별해서 가리키므로 정확하게 딱 하나의 클래스를 골라서 적용할 수 없다 즉 항목을 선택해야 한다  */
+    /* .thumb-img :nth-of-type(2) {} */
+
+</style>
+</head>
+<body>
+    
+    <div class="related-cont">
+        <h4 class="tit">Related Contents</h4>
+        <ul>
+            <li>
+                <div class="thumb-img">Image</div>
+                    <h5 class="tit"><a href="">타이틀입니다타이틀입니다타이틀입니다타이틀입니다</a></h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra feugiat commodo.</p>
+            </li>
+            <li>
+                <div class="thumb-img">Image</div>
+                    <h5 class="tit"><a href="">Title</a></h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra feugiat commodo.</p>
+            </li>
+            <li>
+                <div class="thumb-img">Image</div>
+                    <h5 class="tit"><a href="">Title</a></h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra feugiat commodo.</p>
+            </li>
+            <li>
+                <div class="thumb-img">Image</div>
+                    <h5 class="tit"><a href="">Title</a></h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra feugiat commodo.</p>
+            </li>
+        </ul>
+
+    </div>
+
+    <h5 class="tit">타이틀입니다타이틀입니다타이틀입니다타이틀입니다</h5>
+</body>
