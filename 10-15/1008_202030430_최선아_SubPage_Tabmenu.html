@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SubPage Layout</title>
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    $(function(){
+        // tab 메뉴를 클릭하였을 때 동작함
+        $(".tab ul li").click(function(){ 
+             
+            // 현재 선택되어있던 메뉴들을 초기화함
+            $(".tab ul li").removeClass('on');
+            $(".tab .conBox").removeClass('on');
+ 
+            // 선택된 메뉴에 on 클래스를 주어 표기함
+            $(this).addClass('on');
+ 
+            // 선택된 탭의 data 값으로 content box를 선택함
+            $("#"+$(this).data('id')).addClass('on');
+        });
+    });
+</script>
+<style>
+
+</style>
+</head>
+
+<body>
+<div id="wrap">
+	<div id="header">
+	<header>
+	<h1><a href="" title="logo">SmartContent</a></h1> <!--img에는 alt a에는 title-->
+	<nav>
+		<a href="">Menu2</a>
+		<a href="">Menu3</a>
+		<a href="">Menu4</a>
+		<a href="">Menu5</a>
+	</nav>
+	</header>
+	</div>
+	
+	<div class="content">
+		<div class="sub-visual">
+			<dl>
+				<dt class="tit">Title</dt>
+				<dd>Title description</dd>
+			</dl>
+		</div>
+
+        <!-- 탭메뉴 시작 -->
+	<section class="sec-cont-wrap">
+		<h3 class="tit">Title</h3>
+        <div class="tab">
+            <ul>
+                <li data-id="con1" class="on">Tabmenu1</li>
+                <li data-id="con2">Tabmenu2</li>
+                <li data-id="con3">Tabmenu3</li>
+            </ul>
+            <div id="con1" class="conBox on">
+                <div class="cont">
+                    <!-- 탭메뉴1 내부상단 -->
+                    <div class="sub-img">Image</div>
+                    <dl  class="sub-txt-grp">
+                        <dt class="tit">Title1</dt>
+                        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra feugiat commodo. Nulla aliquam elit ac finibus pellentesque. Sed gravida consequat convallis. In ac neque urna.</dd>
+                        <dt class="tit">Title2</dt>
+                        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra feugiat commodo. Nulla aliquam elit ac finibus pellentesque. Sed gravida consequat convallis. In ac neque urna.</dd>
+                        <dt class="tit">Title3</dt>
+                        <dd>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra feugiat commodo. Nulla aliquam elit ac finibus pellentesque. Sed gravida consequat convallis. In ac neque urna.</dd>
+                    </dl>
+                    <!-- 탭메뉴1 내부상단끝 -->
+                    <!-- 관련 콘텐츠 시작 -->
+                    <div class="related-cont">
+                        <h4 class="tit">Related Contents</h4>
+                        <ul>
+                            <li>
+                                <div class="thumb-img">Image</div>
+                                    <h5 class="tit"><a href="">타이틀입니다타이틀입니다타이틀입니다타이틀입니다</a></h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra feugiat commodo.</p>
+                            </li>
+                            <li>
+                                <div class="thumb-img">Image</div>
+                                    <h5 class="tit"><a href="">Title</a></h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra feugiat commodo.</p>
+                            </li>
+                            <li>
+                                <div class="thumb-img">Image</div>
+                                    <h5 class="tit"><a href="">Title</a></h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra feugiat commodo.</p>
+                            </li>
+                            <li>
+                                <div class="thumb-img">Image</div>
+                                    <h5 class="tit"><a href="">Title</a></h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra feugiat commodo.</p>
+                            </li>
+                        </ul>
+                        <!-- 관련 콘텐츠 끝 -->
+                  </div>
+                </div>
+            </div>
+            <div id="con2" class="conBox">
+                <img src="./img/image2.PNG">
+            </div>
+            <div id="con3" class="conBox">
+                <img src="./img/image3.PNG">
+            </div>
+        </div>
+		
+	</div>	
+	</div>
+    <!-- 탭메뉴 끝 -->
+	<footer>© SMARTCONTENT. All rights reserved.</footer>
+</div>
+</body>
+</html>
