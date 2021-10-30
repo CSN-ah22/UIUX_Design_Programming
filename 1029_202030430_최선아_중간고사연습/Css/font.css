@@ -1,0 +1,139 @@
+/*CSS @font-face syntax : 샘플 소스*/
+@font-face {
+  font-family: 'FontName';
+  font-style: normal;
+  font-weight: 400;
+  src: url('webfont.eot'); /* IE9+ Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	   /* src: local('webfont'), <- IE9+이상은 용량이 조금 크지만 가독성이 좋은 WOFF를 다운받도록 한다. */
+       url('webfont.woff2') format('woff2'), /* Super modern browsers */
+       url('webfont.woff') format('woff'), /* Modern browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#FontName') format('svg'); /* Legacy iOS */
+}
+
+
+/* NanumGothic */
+@font-face {
+	font-family:'NanumGothic';
+	font-weight:400;
+	src: local('NanumGothic'), local('Nanum Gothic'), local('나눔고딕'), local('나눔 고딕'),
+	   url('../font/NanumGothic.woff2') format('woff2'), /* Chrome 36, Opera 23, Firefox 39 */
+	   url('../font/NanumGothic.woff') format('woff'); /* Chrome 6, Firefox 3.6, IE 9, Safari 5.1  */
+}
+@font-face {
+	font-family:'NanumGothic';
+	font-weight:700;
+	src: local('NanumGothicBold'), local('NanumGothic Bold'), local('NanumGothic-Bold'), local('Nanum Gothic Bold'), local('나눔고딕 Bold'), local('나눔 고딕 Bold'),
+	     url('../font/NanumGothicBold.woff2') format('woff2'),  
+	
+}
+@font-face {
+	font-family:'NanumGothic';
+	font-weight:800;
+	src: local('NanumGothicExtraBold'), local('NanumGothic-ExtraBold'), local('NanumGothic ExtraBold'), local('Nanum Gothic ExtraBold'), local('나눔고딕 ExtraBold'), local('나눔 고딕 ExtraBold'),
+	     url('../font/NanumGothicExtraBold.woff2') format('woff2'), 
+	     url('../font/NanumGothicExtraBold.woff') format('woff');
+}
+
+
+/* NanumSquare */
+@font-face {
+    font-family:'NanumSquare';
+	font-weight:300;
+	src: local('NanumSquareL'), local('NanumSquareLight'), local('NanumSquare-Light'), local('NanumSquare Light'), 
+         url('../font/NanumSquareL.woff2') format('woff2'),
+         url('../font/NanumSquareL.woff') format('woff');
+}
+
+@font-face {
+    font-family:'NanumSquare';
+	font-weight:400;
+    src: local('NanumSquareR'), local('NanumSquarRegular'), local('NanumSquare-Regular'), local('NanumSquare Regular'), 
+         url('../font/NanumSquareR.woff2') format('woff2'),
+         url('../font/NanumSquareR.woff') format('woff');
+}
+
+@font-face {
+    font-family:'NanumSquare';
+    font-weight:700;
+    src: local('NanumSquareB'), local('NanumSquareBold'), local('NanumSquare-Bold'), local('NanumSquare Bold'), 
+         url('../font/NanumSquareB.woff2') format('woff2'),
+         url('../font/NanumSquareB.woff') format('woff');
+}
+
+@font-face {
+    font-family:'NanumSquare';
+    font-weight:800;
+    src: local('NanumSquareEB'), local('NanumSquareExtraBold'), local('NanumSquare-ExtraBold'), local('NanumSquare ExtraBold'), 
+         url('../font/NanumSquareEB.woff2') format('woff2'),
+         url('../font/NanumSquareEB.woff') format('woff');
+}
+
+
+/* NotoSansKR */
+@font-face {
+	font-family:'NotoSansKR';
+	font-weight:300;
+	src: local('NotoSansKRLight'), local('NotoSansKR Light'), local('NotoSansKR-Light'), local('Noto Sans KR Light'), 
+	   url('../font/NotoSansKRLight.woff2') format('woff2'), 
+	   url('../font/NotoSansKRLight.woff') format('woff'); 
+}
+
+@font-face {
+	font-family:'NotoSansKR';
+	font-weight:400;
+	src: local('NotoSansKR'), local('NotoSansKRRegular'), local('NotoSansKR Regular'), local('NotoSansKR-Regular'), local('Noto Sans KR Regular'),
+	     url('../font/NotoSansKRRegular.woff2') format('woff2'), 
+	     url('../font/NotoSansKRRegular.woff') format('woff'); 
+}
+
+@font-face {
+	font-family:'NotoSansKR';
+	font-weight:500;
+	src: local('NotoSansKRMedium'), local('NotoSansKR Medium'), local('NotoSansKR-Medium'), local('Noto Sans KR Medium'),
+	   url('../font/NotoSansKRMedium.woff2') format('woff2'), 
+	   url('../font/NotoSansKRMedium.woff') format('woff'); 
+}
+
+@font-face {
+	font-family:'NotoSansKR';
+	font-weight:700;
+	src: local('NotoSansKRBold'), local('NotoSansKR Bold'), local('NotoSansKR-Bold'), local('Noto Sans KR Bold'), 
+	     url('../font/NotoSansKRBold.woff2') format('woff2'), 
+	     url('../font/NotoSansKRBold.woff') format('woff'); 
+}
+
+@font-face {
+	font-family:'NotoSansKR';
+	font-weight:900;
+	src: local('NotoSansKRBold'), local('NotoSansKR Bold'), local('NotoSansKR-Bold'), local('Noto Sans KR Bold'), 
+	     url('../font/NotoSansKRBold.woff2') format('woff2'), 
+	     url('../font/NotoSansKRBold.woff') format('woff'); 
+}
+
+
+/* Roboto */
+@font-face {
+	font-family:'Roboto';
+	font-weight:400;
+	src: local('RobotoRegular'), local('Roboto Regular'), local('Roboto-Regular'), 
+		 url('../font/RobotoRegular.eot'),
+		 url('../font/RobotoRegular.woff') format('woff');
+}
+
+@font-face {
+	font-family:'Roboto';
+	font-weight:500;
+	src: local('RobotoMedium'), local('Roboto Medium'), local('Roboto-Medium'), 
+		 url('../font/RobotoMedium.eot'),
+		 url('../font/RobotoMedium.woff') format('woff');
+}
+
+@font-face {
+	font-family:'Roboto';
+	font-weight:700;
+	src: local('RobotoBold'), local('Roboto Bold'), local('Roboto-Bold'), 
+		 url('../font/RobotoBold.eot'),
+		 url('../font/RobotoBold.woff') format('woff');
+}

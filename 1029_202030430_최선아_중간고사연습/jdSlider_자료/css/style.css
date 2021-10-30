@@ -1,0 +1,12 @@
+@charset "utf-8";/* CSS Document */
+
+
+.jd-slider{width:1260px;margin:50px auto}
+.jd-slider .slide-inner{width:1200px;margin:0 auto}
+.jd-slider .slide-inner::before{content:'';position:absolute;top:0;left:0;right:0;bottom:0;z-index:0;border:1px solid #888}
+.jd-slider .slide-area > li{width:25%;border-right:1px solid #888;border-left:0;box-sizing:border-box;text-align:center}
+.jd-slider .slide-area > li > a{display:block;height:200px;line-height:200px;font-size:3em;font-weight:bold;outline:0}
+.jd-slider .slide-area > li > a:hover{}
+.jd-slider .controller{margin:10px 0 0}
+
+.jd-slider .btn{position:absolute;top:50%;width:1260px;-webkit-transform:translateY(-50%);transform:translateY(-50%);color:#000}
