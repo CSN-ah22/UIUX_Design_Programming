@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+/*-------------------------------------------------------------
+  중간고사 CSS 
+--------------------------------------------------------------*/
+
+/* Common */
+h1,h2,h3,h4,h5,h6{font-family:'NotoSansKR', sans-serif}
+
+/* Main */
+.main-txt{position:absolute;right:20%;top:50%;transform:translateY(-50%);color:#fff;text-align:center}
+.main-txt .tit{font-size:40px}
+.main .sec-cont h3{padding-bottom:0}
+.desc{width:960px;margin:30px auto;text-align:center;font-size:14px;color:#707070}
+
+
+
+/* Main-visual - Title font 사이즈는 40px로 한다 */
+.main-visual li{position:relative;}
+.main-visual dl{position: absolute; right: 20%; top: 50%; color: #fff; transform: translateY(-50%);color: #fff;}
+
+/*.sec-cont{overflow: hidden;}*/
+/* Row1 - 섹션의 width는 1260px을 기준으로 한다 */
+.row1{height: 530px; padding: 70px 0;overflow: hidden;}
+.row1>div{width: 1260px;background-color: #ccc;margin: 0 auto;}
+.row1>div>div{width: 50%;float: left;text-align: center;padding: 40px;}
+.row1 h1{display: block;float: none;font-size: 88px;font-weight: 900;color: #282a35;}
+.row1 p{font-size: 18px;font-family: 'Roboto';font-weight: 500;line-height: 2.5;}
+.row1 .btn{display: block;padding: 10px 16px;width: 200px;margin: 25px auto 0;font-size: 16px;font-weight: 600;color: #fff;border-radius: 50px;}
+.row1 .btn::before{content: '';display: inline-block;width: 24px;height: 24px;background: url("../Img/arrow-right-solid-wt.svg") no-repeat center/ 75%;vertical-align: middle;margin-right: 10px;}
+.row1 .btn1{background-color: #059862;}
+.row1 .btn1:hover{background-color: #106b4a;}
+.row1 .btn2{background-color: #fff4a3;color: #222;}
+.row1 .btn2::before{background-image: url("../Img/arrow-right-solid.svg"); opacity: 0.75;}
+.row1 .btn2:hover{background-color: #ccc592;}
+.row1 .btn3{background-color: #4e5167;}
+.row1 .btn3:hover{background-color: #363847;}
+.right-cont img{border-radius: 10px;width: 100%;}
+
+/* Row2 - 섹션의 width는 1400px을 기준으로 한다 */
+.row2{height:520px;padding:120px 0;background-color:#282A35}
+.row2>div{width: 1400px;background-color: #ccc;margin: 0 auto;}
+.cont-card3>div{width: calc(33.3% - 40px);float: left;text-align: center;margin: 0 20px;padding: 40px 30px;border-radius: 16px;}
+.card1{background-color: #ffc0c7;}
+.card2{background-color: #fff4a3; margin: 0 auto;}
+.card3{background-color: #96d4d4;}
+.icon{width: 110px; height: 110px; float: left;text-align: center;border-radius: 60%;background-color: #fff;}
+.icon>img{display: inline-block; vertical-align: middle;}
+.card-txt>h1{font-size: 40px;float:initial;}
+.card-txt>p{font-size:16px;font-weight:bold;}
+.row2 .btn{display: block;padding: 10px 16px;width: 200px;margin: 53px auto 0;font-size: 16px;font-weight: 600;color: #222;border-radius: 16px; border: solid 1px #222;}
+.row2 .btn::after{content: '';display: inline-block;width: 24px;height: 24px;background: url("../Img/arrow-right-solid.svg") no-repeat center/ 75% ;vertical-align: middle;margin-left: 10px;}
+.row2 .btn:hover{background-color: #fff;}
+
+/* Row3 - 빈 곳에 icon을 넣는다 & html에서 이미지도 교체한다 */
+.row3{overflow:hidden}
+.card-txt-wrap div{float:left;width:40px;height:40px;background:#FF5558 url() no-repeat center/cover;border-radius:2px}
+.card-txt-wrap .ico1{background-image:url("../Img/ico-star.svg")}
+.card-txt-wrap .ico2{background-image:url("../Img/bell-solid.svg");background-size:36%}
+.card-txt-wrap .ico3{}
+.card-txt-wrap .ico4{}
+
+
+
+/* Footer - footer의 width는 1200px을 기준으로 한다 */
+footer{height:270px;background:#eee;padding:50px 0;text-align:left}
+footer>div{width:1200px;margin:0 auto}
+.footer-cont p{line-height: 4em;border-top: 1px solid rgba(0,0,0,.1);font-size: 16px;}
+.footer-cont p:first-child{border-top: none}
+.footer-cont span{padding: 0 20px;display: inline-block;}
+.footer-cont span:first-child{width: 20%;font-weight: bold;}
+.footer-cont span:first-child::before{content: '';display: inline-block;width: 24px;height: 24px;background: url() no-repeat center/ 70%;vertical-align: middle;margin-top: -3px;margin-right: 10px;opacity: .7;}
+.contact span:first-child::before{background-image: url("../Img/envelope-solid.svg");}
+.phone span:first-child::before{background-image: url("../Img/phone-alt-solid.svg");}
+
+/* Media Query - 원하는 부분 한 부분만 적용해도 인정. 단, font 요소들은 제외 */
+@media only screen and (min-width:769px) and (max-width:1280px){ 
+  .jd-slider.main-slider2 .slide-area, .jd-slider.main-slider2 .slide-area > li > a{height: 350px;}
+}
+
+@media only screen and (min-width:640px) and (max-width:768px){ 
+  .jd-slider.main-slider2 .slide-area, .jd-slider.main-slider2 .slide-area > li > a{height: 240px;}
+  .row1{height: auto;}
+  .row1>div{width: 100%;}
+  .row1>div>div{ width: 100%;}
+  .right-cont img{width: 100%;}
+
+  .desc{width: 100%;}
+  .jd-slider{width: 100%;}
+  .jd-slider .slide-inner{width: 100%;}
+  .jd-slider .btn{width: 100%;}
+
+  footer{height: auto;overflow: hidden;width: 100%;}
+  footer>div{width:100%;}
+  .footer-cont span{display: block;padding: 0 50px;}
+  .footer-cont span:first-child{width:100%;line-height: 3em; padding: 0 20px;}
+  .footer-cont p{line-height: 2em; font-size: small;padding: 10px;}
+
+  .sec-cont{padding: 0 16px;}
+  .row2 {height: auto;width: 100%; overflow: hidden; }
+  .cont-card3>div{width: 100%;float: none;}
+  .row2 > div { width: 100%; background-color:transparent}
+  .cont-card3 > div{float:none;margin: 30px auto;} 
+
+}
+
+@media only screen and (min-width:321px) and (max-width:639px){ 
+  .jd-slider.main-slider2 .slide-area, .jd-slider.main-slider2 .slide-area > li > a{height: 190px;}
+  .jd-slider.main-slider2 a{font-size: 1rem;}
+  .jd-slider.main-slider2 .controller .indicate-area a{width: 12px;height: 12px;}
+  .jd-slider.main-slider2 .controller .indicate-area a:after{border-width: 3px;}
+  .row1{height: auto;}
+  .row1>div{width: 100%;}
+  .row1>div>div{ width: 100%;}
+  .right-cont img{width: 100%;}
+
+  .desc{width: 100%;}
+  .jd-slider{width: 100%;}
+  .jd-slider .slide-inner{width: 100%;}
+  .jd-slider .btn{width: 100%;}
+
+  footer{height: auto;overflow: hidden;width: 100%;}
+  footer>div{width:100%;}
+  .footer-cont span{display: block;padding: 0 50px;}
+  .footer-cont span:first-child{width:100%;line-height: 3em; padding: 0 20px;}
+  .footer-cont p{line-height: 2em; font-size: small;padding: 20px;}
+
+  .sec-cont{padding: 0 16px;}
+  .row2 {height: auto;width: 100%; overflow: hidden; }
+  .cont-card3>div{width: 100%;float: none;}
+  .row2 > div { width: 100%; background-color:transparent}
+  .cont-card3 > div{float:none;margin: 30px auto;}
+}
+
+@media only screen and (max-width:320px){ 
+  .jd-slider.main-slider2 .slide-area, .jd-slider.main-slider2 .slide-area > li > a{height: 140px;}
+  
+}

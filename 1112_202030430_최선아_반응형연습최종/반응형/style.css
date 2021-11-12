@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{box-sizing:border-box}
+body, h1{padding:0;margin:0}
+
+header{height:100px;background:#fff;font-size:30px}
+h1{color:#119AB0;padding:30px;font-size:1em}
+nav{background-color:#119ab0;text-align:center}
+nav a{color:#fff;text-decoration:none;padding:15px 30px;display:inline-block;font-size:18px;font-weight:500;font-family: 'Roboto', sans-serif}
+nav a:hover{background-color:#007b8f}
+.content{padding:0 20px 30px;background:#eee;overflow:hidden}
+section, aside{float:left}
+section{width:70%;padding-right:20px}
+aside{width:30%}
+.card{background-color:#fff;padding:20px;margin-top:20px}
+.image{width:100%;background:#999 url() no-repeat center;background-size:cover;text-indent:-999999%;color:transparent;font-size:0}
+section .card:first-child .image{background-image:url(image01.png)}
+section .card:last-child .image{background-image:url(image02.png)}
+aside .card:nth-child(1) .image{background-image:url(image03.png)}
+aside .img-col-3 .image{margin-bottom:10px}
+aside .img-col-3 .image:nth-of-type(1){background-image:url(image04.png)}
+aside .img-col-3 .image:nth-of-type(2){background-image:url(image05.png)}
+aside .img-col-3 .image:nth-of-type(3){background-image:url(image06.png)}
+footer{background:#b9b9b9;padding:10px;text-align:center}
+
+
+/* Media Query */
+@media only screen and (max-width:1280px) { 
+
+}
+
+@media only screen and (min-width:769px) and (max-width:1280px){ 
+	section{width:60%}
+	aside{width:40%}
+}
+
+@media only screen and (max-width:768px){ 
+	h1{font-size:0.75em}
+	nav a{width:100%;border-bottom:1px solid rgba(255,255,255,.2)}
+	section, aside{width:100%;padding:0}
+
+}
+@media only screen and (max-width:320px){ 
+
+
+}
+
+

@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Main Page Layout</title>
+<link rel="stylesheet" href="Css/reset.css">
+<link rel="stylesheet" href="Css/font.css">
+<link rel="stylesheet" href="Css/style.css">
+<link rel="stylesheet" href="Css/jd-slider.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css"
+          integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css"
+          integrity="sha384-q3jl8XQu1OpdLgGFvNRnPdj5VIlCvgsDQTQB6owSOHWlAurxul7f+JpUOVdAiJ5P" crossorigin="anonymous">
+<link rel="stylesheet" href="Css/style-exam.css">
+<script src="js/jquery.js"></script> 
+<script src="js/jquery.jdSlider-latest.min.js"></script> 
+
+<!-- Fancy Box -->
+<link rel="stylesheet" type="text/css" href="Css/jquery.fancybox.min.css">
+<script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+</head>
+
+<body>
+<div id="wrap">
+  <div id="header">
+    <header>
+      <h1><a href="" title="logo">SmartContent</a></h1>
+      <nav> <a href="">Menu1</a> <a href="">Menu2</a> <a href="">Menu3</a> <a href="">Menu4</a><a href="">Menu5</a></nav>
+    </header>
+  </div>
+  <div class="content main"> 
+    
+    <!-- main-visual -->
+    <section class="jd-slider main-slider2 main-visual">
+      <div class="slide-inner">
+          <ul class="slide-area">
+              <li>
+                  <a href="#"><img src="./Img/image1.jpg"alt="image01">
+                    <dl>
+                      <dt class="tit">Menu1</dt>
+                      <dd>Title description</dd>
+                    </dl>
+                  </a>
+              </li>
+              <li>
+                  <a href="#"><img src="./Img/image2.jpg"alt="image02">
+                    <dl>
+                      <dt class="tit">Menu2</dt>
+                      <dd>Title description</dd>
+                    </dl>
+                  </a>
+              </li>
+              <li>
+                  <a href="#"><img src="./Img/image3.jpg"alt="image03">
+                    <dl>
+                      <dt class="tit">Menu3</dt>
+                      <dd>Title description</dd>
+                    </dl>
+                  </a>
+              </li>
+          </ul>
+          <a class="prev" href="#">
+              <i class="fas fa-angle-left fa-2x"></i>
+          </a>
+          <a class="next" href="#">
+              <i class="fas fa-angle-right fa-2x"></i>
+          </a>
+      </div>
+      <div class="controller">
+          <a class="auto" href="#">
+              <i class="fas fa-play fa-xs"></i>
+              <i class="fas fa-pause fa-xs"></i>
+          </a>
+          <div class="indicate-area"></div>
+      </div>
+  </section>
+
+    <!-- Row1 -->
+    <section class="sec-cont row1"> 
+      <div>
+        <div class="left-cont">
+          <h1>HTML</h1>
+          <p>The language for building web pages</p>
+          <a href="#" class="btn btn1">Learn HTML</a>
+          <a href="#" class="btn btn2">Video Tutorial</a>
+          <a href="#" class="btn btn3">HTML Reference</a>
+        </div>
+        <div class="right-cont">
+          <img src="Img/img-html.png" alt="html-img">
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Row2 -->
+    <section class="sec-cont row2"> 
+      <div class="cont-card3"> <!-- center -->
+        <div class="card1"> <!-- [1] w33% -->
+          <div class="icon card-ico1">
+            <img src="Img/code-solid.svg" alt="icon1">
+          </div>
+          <div class="card-txt">
+            <h1>HTML</h1>
+            <p>The language for building web pages</p>
+          </div>
+          <a href="#" class="btn btn1">Learn HTML</a>
+        </div>
+        <div class="card2"> <!-- [2] w33% -->
+          <div class="icon card-ico2">
+            <img src="Img/bookmark-solid.svg" alt="icon1">
+          </div>
+          <div class="card-txt">
+            <h1>CSS</h1>
+            <p>The language for styling web pages</p>
+          </div>
+          <a href="#" class="btn btn1">Learn CSS</a>
+        </div>
+        <div class="card3"> <!-- [3] w33% -->
+          <div class="icon card-ico3">
+            <img src="Img/user-graduate-solid.svg" alt="icon1">
+          </div>
+          <div class="card-txt">
+            <h1>jQuery</h1>
+            <p>A JS library for developing web pages</p>
+          </div>
+          <a href="#" class="btn btn1">Learn jQuery</a>
+        </div>
+      </div>
+    </section>
+	 
+	<!-- Row3 -->
+    <section class="sec-cont row3">
+      <h3  class="tit">Title</h3>
+      <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras viverra feugiat commodo. Nulla aliquam elit ac finibus pellentesque. Sed gravida consequat convallis.</p>
+      <div class="jd-slider slider">
+        <div class="slide-inner">
+          <ul class="slide-area">
+            <li> <a href="Img/img-sample-lg.jpg" data-fancybox="images" data-caption="card-image" data-width="1280" data-height="720" title="card1"> <img src="Img/img-sample.jpg" alt="card-img01">
+              <div class="card-txt-wrap">
+                <div class="card-ico ico1"></div>
+                <dl class="txt-grp">
+                  <dt>타이틀입니다.타이틀입니다.타이틀입니다.</dt>
+                  <dd>Category</dd>
+                </dl>
+              </div>
+              </a> </li>
+            <li> <a href="Img/img-sample-lg.jpg" data-fancybox="images" data-caption="card-image" data-width="1280" data-height="720" title="card2"> <img src="Img/img-sample.jpg" alt="card-img02">
+              <div class="card-txt-wrap">
+                <div class="card-ico ico2"></div>
+                <dl class="txt-grp">
+                  <dt>타이틀입니다.타이틀입니다.타이틀입니다.</dt>
+                  <dd>Category</dd>
+                </dl>
+              </div>
+              </a> </li>
+            <li> <a href="Img/img-sample-lg.jpg" data-fancybox="images" data-caption="card-image" data-width="1280" data-height="720" title="card3"> <img src="Img/img-sample.jpg" alt="card-img03">
+              <div class="card-txt-wrap">
+                <div class="card-ico ico3"></div>
+                <dl class="txt-grp">
+                  <dt>타이틀입니다.타이틀입니다.타이틀입니다.</dt>
+                  <dd>Category</dd>
+                </dl>
+              </div>
+              </a> </li>
+            <li> <a href="Img/img-sample-lg.jpg" data-fancybox="images" data-caption="card-image" data-width="1280" data-height="720" title="card4"> <img src="Img/img-sample.jpg" alt="card-img04">
+              <div class="card-txt-wrap">
+                <div class="card-ico ico4"></div>
+                <dl class="txt-grp">
+                  <dt>타이틀입니다.타이틀입니다.타이틀입니다.</dt>
+                  <dd>Category</dd>
+                </dl>
+              </div>
+              </a> </li>
+            <li> <a href="Img/img-sample-lg.jpg" data-fancybox="images" data-caption="card-image" data-width="1280" data-height="720" title="card5"> <img src="Img/img-sample.jpg" alt="card-img05">
+              <div class="card-txt-wrap">
+                <div class="card-ico ico5"></div>
+                <dl class="txt-grp">
+                  <dt>타이틀입니다.타이틀입니다.타이틀입니다.</dt>
+                  <dd>Category</dd>
+                </dl>
+              </div>
+              </a> </li>
+          </ul>
+        </div>
+        <div class="btn"><a class="prev" href="#"> <i class="fas fa-angle-left fa-2x"></i> </a> <a class="next" href="#"> <i class="fas fa-angle-right fa-2x"></i> </a></div>
+        <div class="controller"> <a class="auto" href="#"> <i class="fas fa-play fa-xs"></i> <i class="fas fa-pause fa-xs"></i> </a>
+          <div class="indicate-area"></div>
+        </div>
+      </div>
+    </section>
+  </div>
+	
+  <!-- Footer -->
+  <footer>
+    <div class="footer-cont">
+      <p class="contact"><span>온라인 문의</span><span>상세한 정보를 받아 보실 수 있습니다</span></p>
+      <p class="phone"><span>대표전화 : 1588-0000</span><span>운영시간 : 월 ~ 금 10:00 ~19:00</span><span>※ 토/일/공휴일 또는 업무 외 시간에 문의는 1:1 문의를 이용해주세요</span></p>
+      <p class="copyright">© SmartContents. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
+	
+<!-- Slider Script -->
+<script>
+        window.onload = function () {
+          $('.main-slider2').jdSlider({
+                wrap: '.slide-inner',
+                isAuto: true,
+                isLoop: true
+            });
+            $('.slider').jdSlider({
+                wrap: '.slide-inner',
+                slideShow: 4,
+                slideToScroll: 1,
+                isLoop: true,
+                responsive: [{
+                    viewSize: 768,
+                    settings: {
+                        slideShow: 1
+                    }
+                }]
+            });
+        };
+    </script>
+</body>
+</html>
